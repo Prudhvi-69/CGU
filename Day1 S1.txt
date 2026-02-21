@@ -1,0 +1,134 @@
+if (boys == true)
+	stay.Silent();
+else if (girls != false)
+	stay.Silent();
+else if (boys != false) 
+	stay.Silent()
+else
+	youCan.talk()
+
+
+
+
+
+
+
+
+for
+do while
+while
+
+
+
+
+fun (x)  //
+{
+	if(x > 3)		// 
+		fun(x/3)  // 28 
+		print x    // 28 
+	else
+		print x+1  // 3+1 
+}
+
+// 4 9 28
+
+fun(x)    // 
+{
+	print x+1 // 11
+	if( x > 5 )
+		print x     //11
+		fun(x-1)  // 11, 10, 9, 8, 7 
+		print x    //  
+	else
+		print x-1; //
+}
+// 12 11 11 10 10 9 9 8 8 7 7 6 6 4 6 7 8 9 10 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun( y )   // 20
+{
+	if( y<25)
+		fun(y+1)   //20
+		print y+1  // 20
+	print y				// 20
+}
+25 25 24 24 23 23 22 22 21 21 20 
+
+fun( x ) //  20
+{	
+	if(x<13)
+		print x
+		fun(x+1)
+		print x
+	else
+		print x-1
+		fun(x-2)
+		print x+1
+}
+
+
+
+
+
+
+
+
+
+int p=3, q=9, r=6;
+if( (p & q)  ||  (q | r) && (r^p))   //  if( 6>9 )
+	p = q*r+r+p*q;			// 87
+	q = r*p+p+q*r;       // 663 
+	r =  p*q+q+r*p;     // 87*663+663+6*87  = 58866
+else
+	p = q*p+r*r;
+	r = r*r+q+p;
+	q = r+q*p+q;
+
+print (p q r)
+
+
+int Arr[] = new int[5];
+
+
+
+
+for(0->n-1)
+	SOP(Arr[i] + " ");
+
+//In the meanwhile, start doing the code also do not stop yourself from doing the code........
+
+Do this paper work and also do the CODE
+CODE : Delete 3rd element in the Array of 5 values😏
+
+
+for(0->n-2)
+{
+	if(i>=2)
+		arr[i]= arr[i+1]
+}
+
+for(0  ----> n-1)
+	SOP(arr[i])
+
+4 7 5 3 3
+
+4 7 0 5 3
+
+1 0 0 1 0
+
+
+Arr.remove(2)

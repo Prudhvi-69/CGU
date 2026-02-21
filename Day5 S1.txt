@@ -1,0 +1,63 @@
+flex-direction : row
+main axis : horizontal (left to right)
+alt axis : vertical
+
+flex-direction : column
+main axis : vertical  (top to bottom)
+alt axis : horizontal
+
+flex-direction : row-reverse
+main axis : horizontal (right to left)
+alt axis : vertical
+
+flex-direction : column-reverse
+main axis : vertical  (bottom to top)
+alt axis : horizontal
+
+
+
+
+
+
+<html>
+    <head>
+        <style>
+            h1{
+                color: hotpink;
+            }
+            h1:hover{
+                color: red;
+                background-color: chartreuse;
+            }
+            .glassomorphic{
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 50px;
+                box-shadow: 0 14px 30px rgba(23, 0, 0, 0.1);
+                backdrop-filter: blur(55px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+		    h2{
+                user-select: none;   //disables text content select feature 
+            }
+
+
+            body{
+                background-position: center;
+                background-position: cover ;
+                
+            }
+        </style>
+    </head>
+<body bgcolor="hotpink" background="C:\Users\Prudhvi\Desktop\Wallies\arcane.jpg" >
+    <h1>Day 5 HTML</h1>
+    <button>Click Me</button>
+    <div class="glassomorphic">
+        <h2>Glassmorphism</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </div>
+
+</body>
+</html>

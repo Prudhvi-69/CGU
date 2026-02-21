@@ -1,0 +1,84 @@
+var x = 69;
+var x = "CGU"
+
+let x = 69;
+x = "CGU"
+
+
+
+
+
+
+
+
+
+
+
+<html>
+ <BODY>
+    <h1 id="abc">Welcome to Celegance'27 </h1>
+    <button>Good Button</button><br><br>
+    <button onclick="document.getElementById('abc').innerHTML='Good College with Great Events'">CLICKKKKKKKKKKKKKKK🎀!</button>
+ </BODY>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+open : seedingminds.co.in    => Login with college mail
+Password : Sms@123 
+
+Go to Dashboard : Change Password 
+
+Go to leaderboard to Connect coding platforms to profile.
+
+If Token invalid : reload the page 
+
+
+(On or before 5.30PM today)
+Check the text in your WhatsApp group for further instructions as the message has been shared in the group already.
+
+
+Search Sandbox Environment playgrounds 
+Stipend based 
+
+
+
+
+
+
+
+
+<html>
+ <BODY>
+    <h1 id="abc">Welcome to Celegance'27 </h1>
+    <button onclick="document.getElementById('abc').innerHTML='Good College with Great Events'">CLICKKKKKKKKKKKKKKK🎀!</button>
+    <button onclick="document.getElementById('abc').style.color='blue'">   BLUEE💦</button>
+   <button onclick="changeRed()">REDD🎀</button>
+   <button onclick="changeToOriginal()">REVERTT</button>
+<script>
+function changeRed() {
+  document.getElementById("abc").style.color = "red";
+}
+function changeToOriginal() {
+  document.getElementById("abc").innerHTML = "Welcome to Celegance'27";
+}
+ </script>   
+ </BODY>
+</html>
+
+
+
+
+
+

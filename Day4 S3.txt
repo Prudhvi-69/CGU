@@ -1,0 +1,102 @@
+<h1 style="color:"red";"> This is CGU </h1>
+
+
+
+<html>
+<head>				<link href="styles.css" rel="stylesheet">
+<style>
+	h1{
+			color:"pink";
+		}
+	#abc{
+			color:"purple";
+		}
+</style> </head>
+<body>
+<h1 id="abc"> Rukooo Zaraaa, Sabar karooo.....😏 </h1>
+</body>
+</html>
+
+
+
+
+
+
+h1
+{							//Element selector by name
+	color:"pink";
+}
+
+#id {						// Element selector by id				* {    	//global selector
+	color:"orange";															background-color:"gray";
+}																				}
+
+.class {					//Element selector by class
+	color:"red";
+}
+
+h1,h2,h3{		//Element selector by grouping
+	color:"green";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<link href="styles.css">
+	<style>
+		h1  { 		color : red;  }
+	</style>
+</head>
+		<body>		<h1 class="bb"> This content will be given color </h1>			</body>
+</html>
+
+styles.css 
+					.bb	{   color:green;  	}
+
+
+
+flex-direction : row 
+main axis : horizontal (left to right)
+alt axis : vertical 
+
+flex-direction : column 
+main axis : vertical  (top to bottom)
+alt axis :  horizontal
+
+flex-direction : row-reverse 
+main axis : horizontal  (right to left)
+alt axis : vertical 
+
+flex-direction : column-reverse 
+main axis : vertical  (bottom to top)
+alt axis :  horizontal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

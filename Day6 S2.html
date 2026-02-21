@@ -1,0 +1,26 @@
+<html>
+<body>
+    <h1 id="abc">This is TEXT</h1>
+    <button onclick="changeColor()">Red🎀!</button>
+    <button onclick="changeBlue()">Blue💦</button>
+    <button onclick="changeTextbasedCondition()">Revert Text</button>
+<script>
+function changeColor() {
+    document.getElementById("abc").style.color = "red";
+}
+function changeBlue() {
+    document.getElementById("abc").style.color = "blue";
+}
+function changeTextbasedCondition() {
+    if(document.getElementById("abc").innerHTML === "This is TEXT"){
+        document.getElementById("abc").innerHTML = "TEXT BLASTED";
+    }
+    else{
+        document.getElementById("abc").innerHTML = "This is TEXT";
+    }
+}
+</script>
+
+
+</body>
+</html>

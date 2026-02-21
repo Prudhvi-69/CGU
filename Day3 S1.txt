@@ -1,0 +1,70 @@
+<html>
+<body>
+<form> 
+<label>Name : </label> 
+<input type="textarea"></input><br>
+Email : 
+<input type="email" placeholder="Enter the mail"></input><br>
+<label>Password : </label>
+<input type="password"></input><br>
+<label> States : </label>
+<input list="st"></input>
+<datalist id="st">
+<option>Odisha</option>
+<option>UK</option>
+<option>UP</option>
+</datalist>
+</form>
+
+
+
+<div>
+<video src="C:\Users\Prudhvi\Downloads\lambo.mp4" controls width=2000px height=1000px>
+<audio id="ad" src="audio.mp3" controls>
+
+<button onClick="abc()" >PlayAudio</button> 
+<script>
+function abc(){
+	document.getElementById("ad").play();
+}
+</script>
+
+</div>
+
+
+
+
+<details>
+<summary>Click this to expand</summary>
+<p>This is going to be a little bit bigger text to demonstrate the concept of using <MARK>details</mark> and <mark>summary</mark> tags</p>
+</details>
+
+
+
+<p><abbr title="Hyper Text Markup Language"/>HTML</p>
+
+
+
+
+
+
+
+
+
+<progress>
+
+<meter>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+if( boys != false )
+	stay.Silent()
+else if( !girls != true)
+	stay.Silent()
+else if( girls != false)
+	stay.Silent()
+else
+	youCan.talk()
+
+
+
+
+
+
+
+
+fun( x )  // 
+{
+	if( x>4)				// 
+		print x			//  
+		fun(x/3)		//   
+	else
+		print x-1	  //
+}
+// 32 10 2 
+
+
+
+
+fun( x )  // 32
+{
+	if( x>4)				// 
+		print x			//  
+		fun(x/3)		//
+		print x   
+	else
+		fun(x+3)
+		print x-1	  //
+}
+
+
+
+fun( x )  // 21,20,19,18,17,16,14
+{
+	if( x>15 )   //
+		fun(x-1) // 21,20,19,18,17,16
+		print x   // 
+		fun(x-2)// 16
+	else
+		print x+2
+}
+// 17 16 16 
+
+
+
+
+
+
+
+Take an Array of size 5 and delete the 3rd element in the array. Display the entire Array after the deletion is done.
+
+
+1 2 4 5 5 
+
+for( i=0; i<n-1 ;i++) 
+
+1 2 0 4 5
+n 
+
+n-1
+1 0 0 1 
+
+
+
+ArrayList 
+
+39769511
+3+9+7+6+9+5+1+1 = 41 
+41 => 4+1 = 5 
+
+1. Loops, Recusion
+
+16:18 16-02-2026
+
+521 % 9 = 8
+22 % 9 = 4 
+1247 = 14 = 5 => 1247%9 = 5 
+54 % 9 = 0 
+
+250
+251
+252 
+253
+254
+
+
+num = obj.nextInt();
+r = num % 9;
+if( r == 0) 
+	print 9
+else
+	print r 
+
+r = 1 + ( ( num -1) % 9)  
+
+
+
+Home_Work : Choose and write any program of your choice and it should follow certain conditions.
+
+1. It should not be simple or easy for others.
+2. It should be unique (not so many know about it kinda)
+3. Choose any programming language.
+4. Usage of built-in methods is not restricted.
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,116 @@
+Inline : 
+<h1 style="color:'red';">This is CGU"/h1>
+
+
+
+
+Internal : 
+<html>
+<head>
+<style>					//inline
+	#para1 {
+color:red;		
+}
+	#para2 {
+color:orange;		
+}	
+	#para3 {
+color:hotpink;		
+}
+
+.heading
+{
+color:gray;
+}
+
+</style>
+</head>
+<body>
+		<p id="para1">jhgfdgjkilkytgdfghjujhgfhjkh</p> 
+		<p id="para2">okjhytfvbvg</p> 
+		<p id="para3">qwesdfcgvhbndrtcvyui</p> 
+
+<h5 class="heading"> iuyfgchjukjgfdxghjvbbnjbhvgfvgh </h5>
+		
+</body>
+
+
+CSS selectors : 
+
+Id
+Class 
+Element
+Group 
+Global 
+
+
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+styles.css
+
+	#para1 {
+color:red;		
+}
+	#para2 {
+color:orange;		
+}	
+
+
+	#para3 {				//ID selector
+color:hotpink;		
+}
+	.heading{				//Class selector						* {  		// Global selector
+color:gray;																background-color:yellow;
+}																			 }
+
+	h5{					//Element selector
+color:blue;
+}
+
+h1,h2,h3,p,b{		// grouping selector
+color:purple;
+}
+ 
+<h1 id="this" class="that"> This shall become that after though</h1>			
+		
+
+
+
+
+
+Flex direction : row 
+Main Axis : horizontal (left to right)
+Alt Axis  : vertical
+
+Flex direction : column 
+Main Axis : vertical  (top to bottom) 
+Alt Axis  : horizontal
+
+Flex direction : row-reverse 
+Main Axis : horizontal   (right to left) 
+Alt Axis  : vertical
+
+Flex direction : column-reverse
+Main Axis : vertical  (bottom to top) 
+Alt Axis  : horizontal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

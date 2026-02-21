@@ -1,0 +1,89 @@
+Nothing right??
+
+
+
+<p>
+Inline CSS : 
+
+
+Internal CSS : 
+direct : 
+
+<style>
+
+p	{
+ color:"red"; 
+background-color:"yellow";	
+}
+
+</style>
+
+
+CSS selector 
+<p class="second">uhgfhjghj</p>
+<p id="third">ytgrfdghjm</p>
+
+
+<style>
+.second   //get element by Class
+{			color:orange;
+	}
+#third		// get element by ID 
+{			color:blue;
+	}
+		
+*				// get all elements
+{
+	}
+h1,h2,h3,p,b 
+{				color:hotpink;
+	}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+flexbox-direction : row/column/row-reverse/coulmn-reverse
+internal CSS : 
+<style>
+	#prime{
+		color:"red";
+		}
+</style>
+
+external CSS : 
+		.class {
+		color:"green";
+	}
+<h1 id="prime" class="first">This is CGU Lifestyle </h1>
+
+
+
+<h2 id="gg"> Good Game </h2>
+
+<h6 id="bg"> Bad Game </h6>
+ 
+
+
+external CSS :
+
+#gg{
+	display:none;
+}
+
+
+scibbidi dit : 
+
+sdfghjkjhgfdrfghbjnknjhrtgyujhyredrtgyujihyrdedrgyhujuhygtrfedrtfhujhygtrftgyhujhygtfrdfgyhujhytfdesdrfgyhnygtfdsdfvtgygbtfvsdftgyhhngbdcrghjmk,jhgvfdcfgbhjnnh
+
+

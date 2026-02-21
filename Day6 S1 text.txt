@@ -1,0 +1,21 @@
+let x = 69;
+
+x = "CGU"
+
+
+alert("")
+
+
+
+
+
+
+
+<html>
+<body>
+    <h1 id="abc">Let us blast this PLANET</h1>
+    <button onclick="document.getElementById('abc').innerHTML= 'Text blasted'">						Blast Off!</button>
+    <button onclick="document.getElementById('abc').style.color='red'">Red🎀!</button>
+    <button onclick="document.getElementById('abc').style.color='blue'">Blue💦</button>
+</body>
+</html>    

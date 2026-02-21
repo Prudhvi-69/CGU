@@ -1,0 +1,39 @@
+<input type="textarea"></input>
+<input type="email"></input>
+<input type="password"></input>
+<input type="number"></input>
+<input type="date"></input>
+<input type="time"></input>
+<input type="datetime"></input>
+<input type="radio"></input>
+
+
+
+<table>
+<thead>
+<tbody>
+<tfoot>
+<th>
+<tr>
+<td>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="">
+<audio src="">
+<video src="">
+
+
+
+
+

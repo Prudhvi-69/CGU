@@ -1,0 +1,164 @@
+GOOOOOOOOOOOOOOOOOOOOOD Nooooooooooooooooooon🎀
+
+You will see the change in 3 minutes
+
+You have seen the change
+
+
+
+
+
+if ( boys == true )
+	stay.Silent();
+else if ( girls!=false )
+	stay.Silent();
+else if ( !girls != false)
+	stay.Silent();
+else
+	youCan.talk();
+
+
+
+
+
+
+
+
+
+
+
+
+fun( x )  // 11, 10, 9, 8, 7, 6 
+{
+	if( x>5 )				//11>5, 10>5, 6>5, 5>5
+		print x+1		// 11, 10, 6
+		fun(x-1)      //  11, 10, 
+	else 
+		print x    //
+}
+// 12 11 10 9 8 7 5 
+
+fun( x )  //
+{
+	if( x>5 )				//11
+		print x+1		// 11
+		fun(x-1)      //   11...... 6 
+	print x    //
+}
+//12 11 10 9 8 7 5 6 7 8 9 10 11 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fun( x ) // 
+{
+	print x
+	if( x > 3)     //
+		fun(x/3)   // 
+		print x     // 
+	else 
+		print x-1 	//
+}
+31 10 3 2 10 31 
+
+fun( x ) // 32
+{
+	print x
+	if( x > 3)     //
+		print x+1
+		fun(x/3)   // 
+		print x     // 
+	else 
+		fun( x-1)
+		print x-1 	//
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Take an integer array of 5 values in it and de;eye tje 3rd element from the array and then display the array after deletion...
+
+
+1 0 1 0 1 
+
+1 0 0 1
+
+
+ArrayList
+
+
+
+
+
+
+947850211
+9+4+7+8+5+0+2+1+1 = 37
+37=>  3+7 = 10
+10=> 1+0 = 1
+**T&C Apply : 
+1. Do not use any loops,recursion
+
+
+
+
+
+
+
+
+
+250
+251 
+252 
+253
+
+
+
+
+12 = 3
+25 = 7
+18 = 
+
+num = obj.nextInt()
+r = num % 9;
+if (r==0)
+	print 9 
+else
+	print r
+										// num = 18
+print ( 1 + ((num-1) % 9))  // 17%9+1  = 9 
+
+
+
+
+
+
+
+
+
+
+
+
