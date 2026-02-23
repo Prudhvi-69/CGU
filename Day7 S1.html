@@ -1,0 +1,56 @@
+<html>
+<body>
+    <h1 id="abc">Let us blast this PLANET</h1>
+    <button onclick="document.getElementById('abc').textContent='The <i>Devourer</i> of Worlds is here'">Click to show failed-Devour the Planet</button>
+    <button onclick="document.getElementById('abc').innerHTML='The <i>Devourer</i> of Worlds is here'">Click to Devour the Planet</button>
+
+    <button onclick="document.getElementById('abc').style.color='red'">Click to become Red...🎀!</button>
+    <button onclick="document.getElementById('abc').style.color='blue'">Click to become Blue💦</button>
+    <script>
+        function add(){
+        let x = 55;
+        let y = 14;
+        let z = x + y;
+        document.getElementById('result').innerHTML=' Result: '+z;
+        document.getElementById('result').style.color='green';
+        }
+        function sub(){
+        let x = 55;
+        let y = 14;
+        let z = x - y;
+        document.getElementById('result').innerHTML=' Result: '+z;
+        document.getElementById('result').style.color='orange';
+        }
+
+        function mul(){
+        let x = 55;
+        let y = 14;
+        let z = x * y;
+        document.getElementById('result').innerHTML=' Result: '+z;
+        document.getElementById('result').style.color='purple';
+        }
+        function div(){
+        let x = 55;
+        let y = 14;
+        let z = x / y;
+        document.getElementById('result').innerHTML=' Result: '+z;
+        document.getElementById('result').style.color='blue';
+        }
+        function rest(){
+            document.getElementById('result').innerHTML='Operations Reset';
+            document.getElementById('result').style.color='hotpink';  
+        }
+    </script>
+    <br>
+    <p id="result">Result Here</p>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <button onclick="rest()">Reset</button>
+
+    <!-- this text is for using class selector -->
+    <h1 class="aa">Class Change</h1>
+    <button onclick="document.getElementsByClassName('aa')[0].style.color='cyan'">Click to change color of class</button>
+</body>
+</html>    
