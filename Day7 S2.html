@@ -1,0 +1,52 @@
+<html>
+<body>
+    <h1 id="abc">This is TEXT</h1>
+    <button onclick="changeColor()">Red🎀!</button>
+    <button onclick="changeBlue()">Blue💦</button>
+    <button onclick="changeTextbasedCondition()">Revert Text</button>
+<script>
+function changeColor() {
+    document.getElementById("abc").style.color = "red";
+}
+function changeBlue() {
+    document.getElementById("abc").style.color = "blue";
+}
+function changeTextbasedCondition() {
+    if(document.getElementById("abc").innerHTML === "This is TEXT"){
+        document.getElementById("abc").innerHTML = "TEXT BLASTED";
+    }
+    else{
+        document.getElementById("abc").innerHTML = "This is TEXT";
+    }
+}
+
+function texting(){
+    // document.getElementsByClassName('ac')[0].style.color='hotpink';
+    document.getElementsByClassName('ac')[0].innerHTML='<b><i>CGU</i></b> is Great';
+}
+function add(){
+    let x = 55;
+    let y = 14;
+    let z = x + y;
+    document.getElementById('result').innerHTML='<b>Result</b> : ' + z;
+    document.getElementById('result').style.color='hotpink';
+}
+function sub(){
+    let x = 55;
+    let y = 14;
+    let z = x - y;
+    document.getElementById('result').innerHTML='<b>Result</b> : ' + z;
+    document.getElementById('result').style.color='red';
+
+}
+</script>
+
+<p class="ac">This is some content going to changed upon clicking a button</p>
+<button onclick="texting()">TextButton</button>
+
+<p id="result">Click below button to perform addition</p>
+<button onclick="add()">Addition</button>
+<button onclick="sub()">Subtraction</button>
+
+</body>
+</html>

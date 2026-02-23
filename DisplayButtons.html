@@ -1,0 +1,26 @@
+<html>
+<body>
+<script>
+    let val1=0;
+    let val2=0;
+    function button1(){
+        val1=1;
+        document.getElementById('display').innerHTML='Value: '+val;
+    }
+    function button2(){
+        val2=2;
+        document.getElementById('display').innerHTML='Value: '+val;
+    }
+    function add()
+    {
+        let sum = val1+val2;
+        document.getElementById('display').innerHTML='Value: '+sum;
+    }
+</script>
+<button id="1" onclick="button1()">1</button>
+<button id="2" onclick="button2()">2</button>    
+<button id="add" onclick="add()">Add</button>
+
+<h1 id="display">Value: 0</h1>
+</body>
+</html>
