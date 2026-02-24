@@ -5,7 +5,7 @@
         <input type="textarea" placeholder="Enter the value2" id="val2"></input><br>
         <button onclick="add()">Add</button>
     </form>
-    <p id>
+    <p id="result"></p>
 
     <script>
         function add() {
@@ -15,7 +15,8 @@
             let val1 = parseFloat(document.getElementById("val1").value);
             let val2 = parseFloat( document.getElementById("val2").value);
             let sum = val1 + val2;
-            alert("Sum is: " + sum);
+            // alert("Sum is: " + sum);
+            document.getElementById('result').innerHTML = "Sum is : " + sum;
         }
     </script>
 </body>
