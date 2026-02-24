@@ -3,7 +3,41 @@
         <form>
             Input1 : <input type="number" placeholder="Enter the number" id="val1"></input><br>
             Input2 : <input type="number" placeholder="Enter the number" id="val2"></input><br>
-            <input type="button" value="Add" onclick="add()"></input>   
+            <input type="button" value="Add" onclick="add()"></input> 
+            <input type="button" value="Subtract" onclick="subtract()"></input> 
+            <input type="button" value="Multiply" onclick="multiply()"></input> 
+            <input type="button" value="Divide" onclick="divide()"></input> <br>
+            <!-- <input type="textarea" placeholder="Result here" id="result"></input>   -->
         </form>
+        <p id="result"></p>
+        <script>
+            function add(){
+                   // let num = 19;
+                let num1 = parseFloat(document.getElementById("val1").value);
+                let num2 = parseFloat(document.getElementById("val2").value);
+                let sum = num1 + num2;
+                document.getElementById("result").innerHTML = "The sum is : " + sum;
+                // alert("The sum is : " + sum);
+                // document.getElementById("result").value = "The sum is : " + sum;
+            }
+            function subtract(){
+                let num1 = parseFloat(document.getElementById("val1").value);
+                let num2 = parseFloat(document.getElementById("val2").value);
+                let difference = num1 - num2;
+                document.getElementById("result").innerHTML = "The difference is : " + difference;
+            }
+            function multiply(){
+                let num1 = parseFloat(document.getElementById("val1").value);
+                let num2 = parseFloat(document.getElementById("val2").value);
+                let product = num1 * num2;
+                document.getElementById("result").innerHTML = "The product is : " + product;
+            }
+            function divide(){
+                let num1 = parseFloat(document.getElementById("val1").value);
+                let num2 = parseFloat(document.getElementById("val2").value);
+                let quotient = num1/num2;
+                document.getElementById("result").innerHTML = "Quotient is : " + quotient;
+            }
+        </script>
     </body>
 </html>
