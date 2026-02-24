@@ -1,7 +1,7 @@
 <html>
 <body>
     <form>
-        <input type="textarea" value="55"placeholder="Enter the value1" id="val1"></input><br>
+        <input type="textarea" placeholder="Enter the value1" id="val1"></input><br>
         <input type="textarea" placeholder="Enter the value2" id="val2"></input><br>
         <button onclick="add()">Add</button>
     </form>
@@ -12,8 +12,8 @@
             // let a = 10;
             // let b = 59;
             // let c = a+b;
-            let val1 = parseFloat(document.getElementById("val1").value);
-            let val2 = parseFloat( document.getElementById("val2").value);
+            let val1 = (document.getElementById("val1").value);
+            let val2 = (document.getElementById("val2").value);
             let sum = val1 + val2;
             alert("Sum is: " + sum);
         }
