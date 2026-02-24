@@ -6,6 +6,9 @@
         <!-- Result : <input type="textarea" placeholder="Result here" id="result"></input> -->
     </form>
     <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="mul()">Multiply</button>
+    <button onclick="div()">Divide</button>
     <p id="result"></p>
     <script>
         function add() {
@@ -19,6 +22,24 @@
             // document.getElementById('result').value = sum;
             document.getElementById('result').innerHTML = sum;
         } 
+        function sub() {
+            let val1 = parseFloat(document.getElementById("val1").value);
+            let val2 = parseFloat(document.getElementById("val2").value);
+            let difference = val1 - val2;
+            document.getElementById('result').innerHTML = difference;
+        }
+        function mul() {
+            let val1 = parseFloat(document.getElementById("val1").value);
+            let val2 = parseFloat(document.getElementById("val2").value);
+            let product = val1 * val2;
+            document.getElementById('result').innerHTML = product;
+        }
+        function div() {
+            let val1 = parseFloat(document.getElementById("val1").value);
+            let val2 = parseFloat(document.getElementById("val2").value);
+            let quotient = val1 / val2;
+            document.getElementById('result').innerHTML = quotient;
+        }   
     </script>
 </body>
 
