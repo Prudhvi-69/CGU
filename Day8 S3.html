@@ -3,21 +3,21 @@
     <form>
         Value1 : <input type="textarea" placeholder="Enter the value1" id="val1"></input><br>
         Value2 : <input type="textarea" placeholder="Enter the value2" id="val2"></input><br>
-        Result : <input type="textarea" placeholder="Result here" id="result"></input>
+        <!-- Result : <input type="textarea" placeholder="Result here" id="result"></input> -->
     </form>
     <button onclick="add()">Add</button>
-    <!-- <p id="result"></p> -->
+    <p id="result"></p>
     <script>
         function add() {
             // let a = 10;
             // let b = 59;
             // let c = a+b;
             let val1 = parseFloat(document.getElementById("val1").value);
-            let val2 = parseFloat( document.getElementById("val2").value);
+            let val2 = parseFloat(document.getElementById("val2").value);
             let sum = val1 + val2;
             // alert("Sum is: " + sum);
-            document.getElementById('result').value = sum;
-            // document.getElementById('result').innerHTML = sum;
+            // document.getElementById('result').value = sum;
+            document.getElementById('result').innerHTML = sum;
         } 
     </script>
 </body>
