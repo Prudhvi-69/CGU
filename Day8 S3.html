@@ -3,7 +3,7 @@
     <form>
         <input type="textarea" placeholder="Enter the value1" id="val1"></input><br>
         <input type="textarea" placeholder="Enter the value2" id="val2"></input><br>
-        <input type="" value="Add" onclick="add()"></input>
+        <input type="textarea" placeholder="Result here" id="result"></input>
     </form>
     <button onclick="add()">Add</button>
     <!-- <p id="result"></p> -->
@@ -17,7 +17,7 @@
             let val2 = parseFloat( document.getElementById("val2").value);
             let sum = val1 + val2;
             // alert("Sum is: " + sum);
-            document.getElementById('result').innerHTML = "Sum is : " + sum;
+            document.getElementById('result').value = "Sum is : " + sum;
         }
     </script>
 </body>
