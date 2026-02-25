@@ -1,0 +1,36 @@
+<html>
+<body>
+<form>
+    <input type="textarea" id="val1" onchange="showName()" placeholder="Enter the Name"></input><br>
+    <input type="textarea" id="val2" oninput="shows()" placeholder="Enter the Text"></input><br>
+    <input type="password" id="val3" oninput="checkPass()" placeholder="Enter the password"></input><br>
+</form>
+<p id="result">Result will be here</p>
+<p id="lens">Live feed will be here</p>
+<p id="pwd">Password strength will be here</p>
+<p id="dis">Password : </p>
+<script>
+    function showName(){
+        let name = document.getElementById('val1').value;
+        document.getElementById('result').innerHTML = "Hello "+name;
+    }
+    function shows(){
+        let t = document.getElementById('val2').value;
+        document.getElementById('lens').innerHTML="Input Entering is: "+t;
+    }
+    function checkPass(){
+        let pass = document.getElementById('val3').value;
+        if(pass.length<5){
+            document.getElementById('pwd').innerHTML="Password is very weak";
+        }
+        else if(pass.length<8){
+            document.getElementById('pwd').innerHTML="Password is OKAY-ishh";
+        }
+        else{
+            document.getElementById('pwd').innerHTML="Password is very strong";
+        }
+        document.getElementById('dis').innerHTML="Password : "+pass;
+    }
+</script>
+</body>
+</html>
