@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <form>
+            <input type="textarea" id="con" onchange="showText()" placeholder="Enter the text here"></input><br>
+
+            <input type="textarea" id="con2" oninput="showTexts()" placeholder="Enter the text here"></input><br>
+        </form>
+        <p id="result">Result shows here</p>
+        <p id="result2">Live update of the text here👉:</p>
+        <script>
+            function showText(){
+                let text=document.getElementById('con').value;
+                document.getElementById('result').innerHTML="Input given above is : "+text;
+            }
+            function showTexts(){
+                let text=document.getElementById('con2').value;
+                document.getElementById('result2').innerHTML="Live update of the text here👉: "+text;
+            }
+        </script>
+    </body>
+</html>
