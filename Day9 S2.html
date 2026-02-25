@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="CSS files\interactive-advanced.css">
+    </head>
     <body>
         <form>
             <input type="textarea" id="con" onchange="showText()" placeholder="Enter the text here"></input><br>
@@ -8,19 +11,43 @@
         </form>
         <p id="result">Result shows here</p>
         <p id="result2">Live update of the text here👉:</p>
+        <p id="pwd">Password strength shows here</p>
+        <p id="lens"></p>
         <script>
-            function checkPass(){
-                let pass=document.getElementById('con3').value;
-                if(pass.length<5){
-                    document.getElementById('result').innerHTML="Password is very weak";
+            const add = (x, y) => x + y;
+            let sum = add(10, 59);
+//            alert("Sum is : " + sum);
+ //Arrow function performs same as normal function but with a different syntax
+        
+ const checkPass = () => {  
+                let pass = document.getElementById('con3').value;
+                if (pass.length < 5) {
+                    document.getElementById('result').innerHTML = "Password is very weak";
+                } else if (pass.length < 8) {
+                    document.getElementById('result').innerHTML = "Password is OKAY-ishh";
+                } else {
+                    document.getElementById('result').innerHTML = "Password is very strong";
                 }
-                else if(pass.length<8){
-                    document.getElementById('result').innerHTML="Password is OKAY-ishh";
-                }
-                else{
-                    document.getElementById('result').innerHTML="Password is very strong";
-                }
-            }
+                document.getElementById('pwd').innerHTML = pass;
+            //Below displays the length while typing the password     
+           document.getElementById('lens').innerHTML = "Length of text: " + pass.length;
+        };
+        
+
+            // function checkPasses(){
+            //     let pass=document.getElementById('con3').value;
+            //     if(pass.length<5){
+            //         document.getElementById('result').innerHTML="Password is very weak";
+                    
+            //     }
+            //     else if(pass.length<8){
+            //         document.getElementById('result').innerHTML="Password is OKAY-ishh";
+            //     }
+            //     else{
+            //         document.getElementById('result').innerHTML="Password is very strong";
+            //     }
+            //     document.getElementById('pwd').innerHTML=pass;
+            // }
             function showText(){
                 let text=document.getElementById('con').value;
                 document.getElementById('result').innerHTML="Input given above is : "+text;
