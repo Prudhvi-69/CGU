@@ -4,10 +4,23 @@
             <input type="textarea" id="con" onchange="showText()" placeholder="Enter the text here"></input><br>
 
             <input type="textarea" id="con2" oninput="showTexts()" placeholder="Enter the text here"></input><br>
+            <input type="password" id="con3" oninput="checkPass()" placeholder="Enter the password"></input><br>
         </form>
         <p id="result">Result shows here</p>
         <p id="result2">Live update of the text here👉:</p>
         <script>
+            function checkPass(){
+                let pass=document.getElementById('con3').value;
+                if(pass.length<5){
+                    document.getElementById('result').innerHTML="Password is very weak";
+                }
+                else if(pass.length<8){
+                    document.getElementById('result').innerHTML="Password is OKAY-ishh";
+                }
+                else{
+                    document.getElementById('result').innerHTML="Password is very strong";
+                }
+            }
             function showText(){
                 let text=document.getElementById('con').value;
                 document.getElementById('result').innerHTML="Input given above is : "+text;
@@ -16,6 +29,7 @@
                 let text=document.getElementById('con2').value;
                 document.getElementById('result2').innerHTML="Live update of the text here👉: "+text;
             }
+            
         </script>
     </body>
 </html>
