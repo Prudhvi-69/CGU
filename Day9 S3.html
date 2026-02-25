@@ -9,7 +9,25 @@
 <p id="lens">Live feed will be here</p>
 <p id="pwd">Password strength will be here</p>
 <p id="dis">Password : </p>
+<p id="lenth">Length of Input Password is : </p>
+<button onclick="alert(add())">Add</button>
 <script>
+
+    //const add = (x,y) => x+y;
+    const add = () => {
+    let f = Number(document.getElementById('val1').value);
+    let s = Number(document.getElementById('val2').value);
+    return f + s;
+    }
+    /* function add(){
+        let x = Number(document.getElementById('val1').value);
+        let y = Number(document.getElementById('val2').value);
+        return x+y;
+    */
+
+    
+    
+
     function showName(){
         let name = document.getElementById('val1').value;
         document.getElementById('result').innerHTML = "Hello "+name;
@@ -17,6 +35,7 @@
     function shows(){
         let t = document.getElementById('val2').value;
         document.getElementById('lens').innerHTML="Input Entering is: "+t;
+        //alert("Sum is : " + add(f, s));
     }
     function checkPass(){
         let pass = document.getElementById('val3').value;
@@ -30,7 +49,9 @@
             document.getElementById('pwd').innerHTML="Password is very strong";
         }
         document.getElementById('dis').innerHTML="Password : "+pass;
+        document.getElementById('lenth').innerHTML="Length : "+pass.length;
     }
+
 </script>
 </body>
 </html>
