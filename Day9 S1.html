@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="CSS files\interactive-advanced.css"> -->
+        </head>
+<body>
+
+
+    <script>
+        // function add(){
+        //     let x = 10;
+        //     let y = 59;
+        //     let z = x + y;
+        //     alert("Result is : "+z);
+        // }
+
+        // const add = (x,y) => x+y;
+       
+        // const add = (x,y) => {let z = x+y; alert("Result is : "+z); };
+
+        // alert(add(10,59));
+        // alert(add(20,30));
+        // alert(add(100,200));
+// function add(){
+//     let x = Number(document.getElementById('val1').value);
+//     let y = document.getElementById('val2').value;
+//     let z = x + Number(y);
+//     document.getElementById('result').innerHTML = z;
+// }
+function showName(){
+    let name = document.getElementById('val1').value;
+    document.getElementById('result').innerHTML = "Hello "+name;
+}
+
+
+function showLength(){
+    let t = document.getElementById('val2').value;
+    document.getElementById('lens').innerHTML = "Length of the text is : "+t.length;
+}
+    </script>
+    <form>
+        <input type="textarea" id="val1"onchange="showName()" placeholder="Enter the Name"></input><br>
+        <!-- <input type="textarea" id="val2" placeholder="Enter the value2"></input><br>  -->
+        <input type="textarea" id="val2" oninput="showLength()" placeholder="Enter the Text"></input><br>
+    </form>
+            <p id="result"></p>
+            <p id="lens"></p>
+</body>
+</html>
