@@ -3,14 +3,16 @@
 <form>
     <input type="textarea" id="val1" placeholder="Enter text"></input><br>
     <button id="submit">SUBMIT</button><br>
+    <button id="re"
 </form>
 
 <p id="shows"></p>
 <script>
     document.getElementById('submit').addEventListener('click', (ev)=>{
-        ev.preventDefault();
+        ev.preventDefault(); //Stops reload of page upon submit
         document.getElementById('shows').innerHTML='Button Clicked';
     });
+
 </script>
 </body>
 </html>
