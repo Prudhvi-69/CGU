@@ -8,10 +8,9 @@
 <p id="shows"></p>
 <script>
     document.getElementById('submit').addEventListener('click', (ev)=>{
-        document.getElementById('shows').innerHTML
+        ev.preventDefault();
+        document.getElementById('shows').innerHTML='Button Clicked';
     });
-
-
 </script>
 </body>
 </html>
