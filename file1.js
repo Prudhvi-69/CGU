@@ -1,5 +1,5 @@
-function shows(){
-    document.getElementById('btn').addEventListener('click', function add(obj){
+function add(){
+   
         obj.preventDefault(); //It stops the page from reloading when the button is clicked
         let t = document.getElementById('val1').value;
         document.getElementById('result').innerHTML="Input Entering is: "+t;
