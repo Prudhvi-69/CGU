@@ -2,13 +2,13 @@
 
 import { sub } from './subs.js';
 
-let num1 = 30;
-let num2 = 15;
+let num1 = 100;
+let num2 = 31;
 
 function add() {
-    let sum = num1 + num2;
-    alert(sub(num1, num2));
-    alert(sum);
+    let sum = 43+26;
+    alert("difference is : "+sub(num1, num2));
+    alert(""+sum);
     // document.getElementById("output").textContent =
     //     "Addition: " + sum + " | Subtraction: " + subtraction;
 }
