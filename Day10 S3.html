@@ -6,8 +6,8 @@
 </form>
 <p id="result">Text shows here</p>
 <script>
-    document.getElementById('btn').addEventListener('click', function add(cgu){
-       // cgu.preventDefault();
+    document.getElementById('btn').addEventListener('click', function add(e){
+        e.preventDefault();
         let t = document.getElementById('val1').value;
         document.getElementById('result').innerHTML="Input Entering is: "+t;
     });
