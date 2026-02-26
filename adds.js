@@ -1,8 +1,10 @@
 // adds.js
 /*
-
-
-
+<html>
+<body>
+<script type="module" src="adds.js"></script>
+</body>
+</html>*/ 
 import { sub } from './subs.js';
 let num1 = 100;
 let num2 = 31;
