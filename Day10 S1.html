@@ -1,4 +1,13 @@
 <html>
+<body>
     <h1 id="content">Welcome to My Class</h1>
-    <button >Change Content</button>
+    <button id="btn">Change Content</button>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            document.getElementById('content').innerHTML = "Have a nice day!";
+        });
+
+
+</body>
 </html>
