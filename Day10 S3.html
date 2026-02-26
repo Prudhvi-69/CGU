@@ -13,7 +13,7 @@
         document.getElementById('result').innerHTML="Input Entering is: "+t;
     });
     document.getElementById('refresh').addEventListener('click', function refresh(){
-        alert("Are you sure you want to refresh the page? All data will be lost.");
+        confirm("Are you sure you want to refresh the page? All data will be lost.");
         location.reload(); //Refresh page manually with a button
     });
 </script>
