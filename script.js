@@ -3,10 +3,10 @@ import sub from "./sub";
 function add(obj)
 {
     obj.preventDefault();
-    let x = 6;
-    let y = 9;
+    let x = parseInt(document.getElementById('val1').value);
+    let y = parseInt(document.getElementById('val2').value);
     alert(x+y);
-    alert(sub());
+    sub();
 }
 document.getElementById('add').addEventListener('click', add);
 
