@@ -1,3 +1,8 @@
+document.getElementById
+
+
+
+
 document.getElementById('btn').addEventListener('click', function(obj){
             obj.preventDefault();
         document.getElementById('content').innerHTML = "Form submitted without reload";
@@ -9,3 +14,6 @@ document.getElementById('btn').addEventListener('click', function(obj){
         document.getElementById('refresh').addEventListener('click', function(){
             location.reload();
         });
+
+
+
