@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <link rel="script" href="script.js"
+    </head>
 <body>
     <form>
         <input type="textarea" id="val1" placeholder="Enter the Name"></input><br>
@@ -10,18 +13,7 @@
     <button id="refresh">Refresh</button>
 </form>
     <script> //Prevent reload
-        document.getElementById('btn').addEventListener('click', function(obj){
-            obj.preventDefault();
-        document.getElementById('content').innerHTML = "Form submitted without reload";
-        });
-        document.getElementById('btn2').addEventListener('click', function(cgu){
-           //cgu.preventDefault(); //stops reload
-            document.getElementById('content').innerHTML = "Form reset without reload";
-        });
-        document.getElementById('refresh').addEventListener('click', function(){
-            location.reload();
-        });
-
+        
         </script>
 
 </body>
