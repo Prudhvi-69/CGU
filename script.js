@@ -1,12 +1,14 @@
 import sub from "./sub";
 
-function add()
+function add(obj)
 {
+    obj.preventDefault();
     let x = 6;
     let y = 9;
     alert(x+y);
     alert(sub());
 }
+document.getElementById
         document.getElementById('btn').addEventListener('click', function(obj){
             obj.preventDefault();
         document.getElementById('content').innerHTML = "Form submitted without reload";
