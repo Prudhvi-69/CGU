@@ -1,5 +1,5 @@
 import {sub} from "./sub";
-function add(obj)   
+function adds(obj)   
 {
     obj.preventDefault();
     let x = parseInt(document.getElementById('val1').value);
@@ -7,4 +7,4 @@ function add(obj)
     alert(x+y);
     sub();
 };
-export default add();
+export default adds();
