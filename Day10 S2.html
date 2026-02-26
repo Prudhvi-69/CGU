@@ -3,7 +3,7 @@
 <form>
     <input type="textarea" id="val1" placeholder="Enter text"></input><br>
     <button id="submit">SUBMIT</button><br>
-    <button id="re"
+    <button id="reload">REFRESH</button><br>
 </form>
 
 <p id="shows"></p>
@@ -11,6 +11,10 @@
     document.getElementById('submit').addEventListener('click', (ev)=>{
         ev.preventDefault(); //Stops reload of page upon submit
         document.getElementById('shows').innerHTML='Button Clicked';
+    });
+    document.getElementById('reload').addEventListener('click', ()=>{
+        location.reload(); //Refresh page manually with a button
+        document.getElementById('shows').innerHTML='Page Refreshed';
     });
 
 </script>
