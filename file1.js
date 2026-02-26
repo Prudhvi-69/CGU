@@ -1,3 +1,4 @@
+function shows(){
     document.getElementById('btn').addEventListener('click', function add(obj){
         obj.preventDefault(); //It stops the page from reloading when the button is clicked
         let t = document.getElementById('val1').value;
@@ -8,3 +9,4 @@
         //this function will give us two options of okay or cancel unlike alert only okay
        location.reload(); //Refresh page manually with a button
     });
+}
