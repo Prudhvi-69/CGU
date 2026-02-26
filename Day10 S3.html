@@ -1,5 +1,15 @@
 <html>
 <body>
-
+<form> 
+    <input type="textarea" id="val1" placeholder="Enter the Text"></input><br>
+    <button id="btn" onclick="shows()">Click to show add and then not show sub result</button
+</form>
+<p id="result">Text shows here</p>
+<script>
+    function shows(){
+        let t = document.getElementById('val1').value;
+        alert("Input Entering is: "+t);
+    }
+</script>
 </body>
 </html>
