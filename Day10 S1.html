@@ -10,18 +10,18 @@
     <button id="refresh">Refresh</button>
     <button id="add" onclick="add()">Click to show add and then sub result</button>
 </form> -->
-<button id="add" onclick="adds()">Click to show add and then sub result</button>
+<button id="add">Click to show add and then sub result</button>
 <script>
-import sub from "./sub.js";
-function adds(obj)   
+import {sub} from "./sub.js";
+document.getElementById('add').addEventListener('click', adds);
+function adds()   
 {
-    obj.preventDefault();
+//    obj.preventDefault();
     let x = parseInt(document.getElementById('val1').value);
     let y = parseInt(document.getElementById('val2').value);
     alert(x+y);
     sub();
 };
-
 </script>
 </body>
 </html>
