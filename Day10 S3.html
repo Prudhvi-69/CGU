@@ -2,7 +2,8 @@
 <body>
 <form> 
     <input type="textarea" id="val1" placeholder="Enter the Text"></input><br>
-    <button id="btn">Click to show add and then not show sub result</button
+    <button id="btn">Click to show add and then not show sub result</button>
+    <button id="refresh">Refresh</button>
 </form>
 <p id="result">Text shows here</p>
 <script>
@@ -10,6 +11,10 @@
         obj.preventDefault(); //It stops the page from reloading when the button is clicked
         let t = document.getElementById('val1').value;
         document.getElementById('result').innerHTML="Input Entering is: "+t;
+    });
+    document.getElementById('refresh').addEventListener('click', function refresh(){
+        confirm("Press okay to refresh and lose  the data or click escape to keep the data");
+        location.reload(); //Refresh page manually with a button
     });
 </script>
 </body>
