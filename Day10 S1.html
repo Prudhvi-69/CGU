@@ -7,6 +7,7 @@
         <input type="reset" id="btn2" value="Reset"></input><br>
     <h1 id="content">Welcome to My Class</h1>
     <button id="btn">Change Content</button>
+    <button id="refresh">Refresh</button>
 </form>
     <script> //Prevent reload
         document.getElementById('btn').addEventListener('click', function(obj){
@@ -17,7 +18,10 @@
            //cgu.preventDefault(); //stops reload
             document.getElementById('content').innerHTML = "Form reset without reload";
         });
-        
+        document.getElementById('refresh').addEventListener('click', function(){
+            location.reload();
+        });
+
         </script>
 
 </body>
