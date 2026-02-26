@@ -12,9 +12,10 @@
         ev.preventDefault(); //Stops reload of page upon submit
         document.getElementById('shows').innerHTML='Button Clicked';
     });
-    document.getElementById('reload').addEventListener('click', ()=>{
+    document.getElementById('reload').addEventListener('click', (oo)=>{
+        oo.preventDefault();
         confirm("Press okay to refresh and lose  the data or click escape to keep the data");
-        location.reload(); //Refresh page manually with a button
+        //location.reload(); //Refresh page manually with a button
         document.getElementById('shows').innerHTML='Page Refreshed';
     });
 
