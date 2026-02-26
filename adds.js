@@ -7,8 +7,8 @@ let num2 = 31;
 
 function add() {
     let sum = 43+26;
-    alert("difference is : "+sub(num1, num2));
-    alert(""+sum);
+    alert("Difference is : "+sub(num1, num2));
+    alert("Sum is : "+sum);
     // document.getElementById("output").textContent =
     //     "Addition: " + sum + " | Subtraction: " + subtraction;
 }
