@@ -7,9 +7,14 @@
     <button id="btn">Change Content</button>
 </form>
     <script> //Prevent reload
+        document.getElementById('btn').addEventListener('click', function(cgu){
+            cgu.preventDefault();
+        });
         
         
-        
+
+
+
         document.getElementById('btn').addEventListener('click', function(){
             document.getElementById('content').innerHTML = "Have a nice day!";
         });
