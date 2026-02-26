@@ -1,6 +1,6 @@
 function subs(){
     let x = 100;
-    let y = 31;
+    let y = 301;
     alert(x-y);
 }
 export default subs();
