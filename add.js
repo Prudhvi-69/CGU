@@ -4,5 +4,5 @@ export function adds(obj){
     let x = 11;
     let y = 58;
     alert(x+y);
-   subs();
+    subs();
 };
