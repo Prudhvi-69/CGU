@@ -8,7 +8,11 @@ function add(obj)
     alert(x+y);
     alert(sub());
 }
-document.getElementById
+document.getElementById('add').addEventListener('click', add);
+
+
+
+
         document.getElementById('btn').addEventListener('click', function(obj){
             obj.preventDefault();
         document.getElementById('content').innerHTML = "Form submitted without reload";
