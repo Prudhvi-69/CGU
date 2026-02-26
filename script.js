@@ -7,11 +7,7 @@ function add()
     alert(x+y);
     alert(sub());
 }
-
-
-
-
-document.getElementById('btn').addEventListener('click', function(obj){
+        document.getElementById('btn').addEventListener('click', function(obj){
             obj.preventDefault();
         document.getElementById('content').innerHTML = "Form submitted without reload";
         });
