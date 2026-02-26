@@ -6,5 +6,5 @@ function add(obj)
     let y = parseInt(document.getElementById('val2').value);
     alert(x+y);
     sub();
-}
-document.getElementById('add').addEventListener('click', add);
+};
+export default add();
