@@ -3,7 +3,7 @@ function add()
     let x = 6;
     let y = 9;
     alert(x+y);
-    
+    alert(sub());
 }
 
 
