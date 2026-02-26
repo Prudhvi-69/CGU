@@ -13,7 +13,7 @@
         document.getElementById('shows').innerHTML='Button Clicked';
     });
     document.getElementById('reload').addEventListener('click', ()=>{
-        alert("Do you want to continue? All the data in the form will be gone..!!🙂")
+        confirm("Press okay to refresh and lose  the data or click escape to keep the data");
         location.reload(); //Refresh page manually with a button
         document.getElementById('shows').innerHTML='Page Refreshed';
     });
