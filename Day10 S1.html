@@ -20,8 +20,13 @@
         alert(x+y);
     });
 </script>
-<script src="sub.js">
-    
+<script>
+    document.getElementById('bt2').addEventListener('click', function subs(obj){
+        obj.preventDefault();
+        let x = 100;
+        let y = 5;
+        alert(x-y);
+    });
 </script>
 </body> 
 </html>
