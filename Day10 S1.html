@@ -11,6 +11,13 @@
     <button id="add" onclick="add()">Click to show add and then sub result</button>
 </form> -->
 <button id="add" onclick="adds()">Click to show add and then sub result</button>
-<script type="script" src="add.js"></script>
+<script type="script" src="a.js">
+    document.getElementById('btn').addEventListener('click', function add(obj){
+        obj.preventDefault();
+        let x = 11;
+        let y = 58;
+        alert(x+y)
+    }));
+</script>
 </body> 
 </html>
