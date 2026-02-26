@@ -3,16 +3,16 @@
     <form>
         <input type="textarea" id="val1" placeholder="Enter the Name"></input><br>
         <input type="password" id="val2" placeholder="Enter the password"></input><br>
-        <input type="submit" id="btn" value="Submit"></input><br>
+        <input type="submit" id="btn" value="Submit"></input>   
         <input type="reset" id="btn2" value="Reset"></input><br>
     <h1 id="content">Welcome to My Class</h1>
     <button id="btn">Change Content</button>
 </form>
     <script> //Prevent reload
-        document.getElementById('btn').addEventListener('click', function(cgu){
-            cgu.preventDefault();
+        document.getElementById('btn').addEventListener('click', function(obj){
+            obj.preventDefault();
         document.getElementById('content').innerHTML = "Form submitted without reload";
-        })
+        });
         document.getElementById('btn2').addEventListener('click', function(cgu){
             cgu.preventDefault();
             document.getElementById('content').innerHTML = "Form reset without reload";
