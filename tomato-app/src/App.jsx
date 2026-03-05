@@ -1,17 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {Home} from './components/Home'
-import {Reviews} from './components/Reviews'
+import { LoginPage } from './components/Login'
+import Check from './components/BasicProp'
+import { useState } from 'react';
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count,setCount] = useState(0);
+  const [name,setName] = useState('Name');
   return (
     <>  
+    <button onClick={() => setCount((count) => count + 1)}>
+     count is {count}
+    </button>
+ 
+    <button onClick={() => setName((name) => name +count+" times")}>
+    {name}
+    </button>
       <h1>Tomato App</h1>
-      <a href="tomato-app/src/components/Home.jsx" target="_blank">HomePage</a>
-      <a href="tomato-app/src/components/Reviews.jsx" target="_blank">ReviewsPage</a>
+      <LoginPage />
+      <Check name="CGU" age="96"/>
+      <Check name="BBSR" age="699"/>
+
     </> 
       /* <div>
         <a href="https://vite.dev" target="_blank">

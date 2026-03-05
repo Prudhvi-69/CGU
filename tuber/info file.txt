@@ -1,0 +1,6 @@
+npm create vite@latest
+Project-name : in lowercase 
+Framework : React 
+Variant : JavaScript
+beta version : yes or no (your wish)
+start and run : yes or no 

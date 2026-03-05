@@ -1,0 +1,6 @@
+Inside the folder  src -> components 
+LoginPage function inside Login.jsx
+RegisterPage function inside Register.jsx
+
+Import these two functions inside App.jsx 
+Call them as XML tags 

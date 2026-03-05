@@ -1,0 +1,6 @@
+Inside src -> components 
+1. LoginPage function inside Login.jsx
+2. RegisterPage function inside Register.jsx
+Open App.jsx and import functions from files
+
+Use the function name as XML element
