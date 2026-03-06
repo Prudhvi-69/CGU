@@ -2,7 +2,8 @@ import './App.css'
 // import { LoginPage } from './components/Login'
 // import Check from './components/BasicProp'
 // import { useState } from 'react';
-import Checks from './components/ClassComp';
+// import Checks from './components/ClassComp';
+import Checks from './components/functionCompWithMounting';
 function App() {
   return(
     <>    
