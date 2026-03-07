@@ -3,12 +3,36 @@ import './App.css'
 // import Check from './components/BasicProp'
 // import { useState } from 'react';
 // import Checks from './components/ClassComp';
-import Checks from './components/functionCompWithMounting';
+// import Checks from './components/functionCompWithMounting';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { LoginPage } from './components/Login';
+import { Home } from './components/Home';
+import { About } from './components/About';
 function App() {
   return(
-    <>    
-      <Checks />
+    <>
+    <nav>
+      <Link to="/">Home</Link> |
+      <Link to="/about">About</Link> |
+      <Link to="/contact">Contact</Link> |
+      <Link to="/login">Login</Link>  |
+      <Link to="/register">Register</Link>  |
+      <Link to="/reviews">Reviews</Link>  |
+      <Link to="/services">Services</Link>  
+    </nav>  
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/contact" element={<h1>Contact Page</h1>} />
+      <Route path="/login" element={<LoginPage/>} />
+      <Route path="/register" element={<h1>Register Page</h1>} />
+      <Route path="/reviews" element={<h1>Reviews Page</h1>} />
+      <Route path="/services" element={<h1>Services Page</h1>} />
+    </Routes>
     </>
+    // <>    
+    //   {/* <Checks /> */}
+    // </>
   )
 }
 export default App;
