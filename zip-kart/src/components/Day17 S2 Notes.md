@@ -8,4 +8,6 @@ react-router-dom : It is a tool which will provide us with the navigation functi
 
 <Link> : This is going to create the path for any text, and linking the text to the web url path.
 
+<NavLink> : It will create the path for any text, linking the text to the web url and it will also have the feature of accessing the active url in the address bar  
+
 
