@@ -12,26 +12,54 @@ import './App.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { Reviews } from './components/Reviews'
 import { Login } from './components/Login'
+import { NavLink } from 'react-router-dom'
+import { ErrorPage } from './components/ErrorPage'
+import { Home } from './components/Home'
+import { Register } from './components/Register'
 function App() {
   return (
     <BrowserRouter>
       <nav>
-        <Link to="/">Home</Link>   |     
+        <NavLink to="/" style={({isActive}) => ({
+          color : isActive ? "orange" : "blue"
+        })}> Home </NavLink> | 
+        <NavLink to="/reviews"style={({isActive}) => ({
+          color : isActive ? "skyblue" : "blue"
+        })}> Reviews </NavLink> | 
+        <NavLink to="contact" style={({isActive}) => ({
+          color : isActive ? "hotpink" : "blue"
+        })}> Contact </NavLink> | 
+        <NavLink to="/about" style={({isActive}) => ({
+          color : isActive ? "purple" : "blue"
+        })}> About </NavLink> |
+        <NavLink to="/services" style={({isActive}) => ({
+          color : isActive ? "yellow" : "blue"
+        })}> Services </NavLink> | 
+        <NavLink to="/login" style={({isActive}) => ({
+          color : isActive ? "green" : "blue"
+        })}> Login </NavLink> | 
+        <NavLink to="/register" style={({isActive}) => ({
+          color : isActive ? "red" : "blue"
+        })}> Register </NavLink>
+                
+        {/* <Link to="/">Home</Link>   |     
          <Link to="/reviews"> Reviews</Link>    |     
          <Link to="/contact"> Contact</Link>   |     
          <Link to="/about"> About</Link>   |     
          <Link to="/services"> Services</Link>   |     
          <Link to="/login"> Login</Link>   |     
-         <Link to="/register"> Register</Link>       
+         <Link to="/register"> Register</Link>        */}
       </nav> 
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/reviews" element={<Reviews/>} />
         <Route path="/contact" element={<h1>Contact Page</h1>} />
         <Route path="/about" element={<h1>About Page</h1>} />
         <Route path="/services" element={<h1>Services Page</h1>} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/register" element={<h1>Register Page</h1>} />
+        <Route path="/register" element={<Register/>} />
+        <Route path="/success" element={<h1>Login Successfull</h1>} />
+        <Route path="*" element={<ErrorPage/>} />
       </Routes>
     </BrowserRouter>
       // const [count, setCount] = useState(1006.01);
