@@ -11,3 +11,6 @@ React Router DOM : It is a tool which provides the packages that are useful navi
 
 <Link> : This tag is responsible for giving the links between the route (the component) and the browser url path.
 
+<NavLink> : NavLink will let us find the current path of the url and let the user know in which link we are currently present and let the developer change the style to make sure we are inside that link.
+
+** This uses the built-in tag from react-router-dom as : NavLink, it works almost as same Link tag, but contains one extra feature where it can identify the current path link url.
