@@ -7,7 +7,7 @@ import Counter from './components/Counter'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { HomePage } from './components/Home'
 import { Reviews } from './components/Reviews'
-import { Contactus } from './components/Contactus'
+import  Contactus  from './components/Contactus'
 import { NavLink } from 'react-router-dom'
 import { ErrorPage } from './components/ErrorPage'
 import Register from './components/Register'
@@ -54,14 +54,14 @@ function App() {
       <Route path="/contactus" element={<Contactus/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="*" element={<ErrorPage/>}/>
-      <Route path="/register" element={<Register/>}/>
+      <Route path="/register" element={<Register name="CGU"/>}/>
       <Route path="/success" element={<h1>Login Successful</h1>}/>
     </Routes>
+        {/* <Counts name="Hundia"/> */}
   </BrowserRouter>
 
 
     // {/* <Counts name="CGU" age="69"/>
-    // <Counts name="Subhankar" age="45"/>
     // <Counter/> */}
   )
 }
