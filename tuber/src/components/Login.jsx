@@ -10,6 +10,7 @@ export function Login(){
                 Don't you have any account yet?👀🐈
                 <button onClick={() => nav("/register")}>Register</button>
             </form>   
+            <button onClick={() => nav(-1)}> Back </button>
         </div>
     )
 }

@@ -4,7 +4,7 @@ import './App.css'
 // import { Contact } from './components/Contact'
 // import { About } from './components/About'
 // import Check from './components/FileMain';
-// import Show from './components/Showing';
+import Show from './components/Showing';
 // import Counter from './components/ClassComp';
 // import Counter from './components/FuncCompCounter';
 
@@ -14,8 +14,8 @@ import { Reviews } from './components/Reviews'
 import { Login } from './components/Login'
 import { NavLink } from 'react-router-dom'
 import { ErrorPage } from './components/ErrorPage'
-import { Home } from './components/Home'
-import { Register } from './components/Register'
+import  Home  from './components/Home'
+import  Register  from './components/Register'
 function App() {
   return (
     <BrowserRouter>
@@ -61,6 +61,7 @@ function App() {
         <Route path="/success" element={<h1>Login Successfull</h1>} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
+      <Show name="Tony Stark"/>
     </BrowserRouter>
       // const [count, setCount] = useState(1006.01);
   // const [name, setupName] = useState('MyName');
