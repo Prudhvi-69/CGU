@@ -1,0 +1,13 @@
+function add()
+{
+    return(
+        <h1>Addition</h1>
+    )
+}
+function sub()
+{
+    return(
+        <h1>Subtraction</h1>
+    )
+}
+export default {add,sub}

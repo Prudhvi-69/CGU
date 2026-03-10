@@ -11,9 +11,11 @@ import { About } from './components/About';
 import { Reviews } from './components/Reviews';
 import { Register } from './components/Register';
 import { ErrorPage } from './components/Errorpage';
+import Checks from './components/ClassComp';
+import Check from './components/BasicProp';
 function App() {
   return(
-    <>
+    <BrowserRouter>
     <nav>
       {/* <Link to="/">Home</Link> |
       <Link to="/about">About</Link> |
@@ -48,12 +50,13 @@ function App() {
       <Route path="/contact" element={<h1>Contact Page</h1>} />
       <Route path="/login" element={<LoginPage/>} />
       <Route path="/register" element={<Register/>} />
-      <Route path="/reviews" element={<Reviews/>} />
+      <Route path="/reviews" element={<Reviews name="CGU"/>} />
       <Route path="/services" element={<h1>Services Page</h1>} />
       <Route path="/successLogin" element={<h1>Login Successful, welcome to our App</h1>} />  
       <Route path="*" element={<ErrorPage/>} />
     </Routes>
-    </>
+    <Check name="CGU" age="44"/>
+    </BrowserRouter>
     // <>    
     //   {/* <Checks /> */}
     // </>

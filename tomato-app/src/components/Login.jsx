@@ -8,7 +8,7 @@ export function LoginPage(){
         <input type="password" placeholder="Enter password"></input><br></br>
         <button onClick={() => navi('/successLogin')}>Login</button>    
     </form>        
-    Don't have an account? <button onClick={() => navi('/register')}>Register</button>
+    Don't you have an account yet? <button onClick={() => navi('/register')}>Register</button>
     
 </div> 
     )
