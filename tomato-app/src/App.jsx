@@ -13,6 +13,7 @@ import { Register } from './components/Register';
 import { ErrorPage } from './components/Errorpage';
 import Checks from './components/ClassComp';
 import Check from './components/BasicProp';
+import StudentForm from './pages/StudentForm';
 function App() {
   return(
     <BrowserRouter>
@@ -43,6 +44,9 @@ function App() {
       <NavLink to="/services" style={ ( {isActive} ) => ({
         color : isActive ? "orange" : "blue"
       })}>Services</NavLink> 
+      <NavLink to="/Form" style={ ( {isActive} ) => ({
+        color : isActive ? "purple" : "blue" 
+      })}>Student Form</NavLink>
     </nav>  
     <Routes>
       <Route path="/" element={<Home/>}/>
@@ -54,8 +58,10 @@ function App() {
       <Route path="/services" element={<h1>Services Page</h1>} />
       <Route path="/successLogin" element={<h1>Login Successful, welcome to our App</h1>} />  
       <Route path="*" element={<ErrorPage/>} />
+      <Route path="/Form" element={<StudentForm/>} />
     </Routes>
     <Check name="CGU" age="44"/>
+    
     </BrowserRouter>
     // <>    
     //   {/* <Checks /> */}
