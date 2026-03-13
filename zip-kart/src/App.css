@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+div{
+  border: 10px solid hotpink;
+  border-radius: 69px;
+  display:inline-block;
+  padding: 10px;
+  margin:20px;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
