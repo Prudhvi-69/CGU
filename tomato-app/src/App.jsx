@@ -14,57 +14,85 @@ import { ErrorPage } from './components/Errorpage';
 import Checks from './components/ClassComp';
 import Check from './components/BasicProp';
 import StudentForm from './pages/StudentForm';
+import { useState, useEffect } from 'react';
+import FetchData from './pages/FetchData';
 function App() {
+  const [users, setUsers] = useState([]);
+//fetching from jsonplaceholder
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())  //converts raw into json format 
+      .then(data => setUsers(data)); // 
+  }, []);
+
   return(
-    <BrowserRouter>
-    <nav>
-      {/* <Link to="/">Home</Link> |
-      <Link to="/about">About</Link> |
-      <Link to="/contact">Contact</Link> |
-      <Link to="/login">Login</Link>  |
-      <Link to="/register">Register</Link>  |
-      <Link to="/reviews">Reviews</Link>  |
-      <Link to="/services">Services</Link>   */}
-      <NavLink to="/">Home</NavLink> | 
-      <NavLink to="/about" style={ ( {isActive} ) => ({
-        color : isActive ? "green" : "blue"
-      })}>About</NavLink> | 
-      <NavLink to="/contact" style={ ( {isActive} ) => ({
-        color : isActive ? "yellow" : "blue"
-      })}>Contact</NavLink> |
-      <NavLink to="/login" style={ ( {isActive} ) => ({
-        color : isActive ? "red" : "blue"
-      })}>Login</NavLink> | 
-      <NavLink to="/register" style={ ( {isActive} ) => ({
-        color : isActive ? "hotpink" : "blue"
-      })}>Register</NavLink> | 
-      <NavLink to="/reviews" style={ ( {isActive} ) => ({
-        color : isActive ? "skyblue" : "blue"
-      })}>Reviews</NavLink> | 
-      <NavLink to="/services" style={ ( {isActive} ) => ({
-        color : isActive ? "orange" : "blue"
-      })}>Services</NavLink> 
-      <NavLink to="/Form" style={ ( {isActive} ) => ({
-        color : isActive ? "purple" : "blue" 
-      })}>Student Form</NavLink>
-    </nav>  
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/about" element={<About/>}/>
-      <Route path="/contact" element={<h1>Contact Page</h1>} />
-      <Route path="/login" element={<LoginPage/>} />
-      <Route path="/register" element={<Register/>} />
-      <Route path="/reviews" element={<Reviews name="CGU"/>} />
-      <Route path="/services" element={<h1>Services Page</h1>} />
-      <Route path="/successLogin" element={<h1>Login Successful, welcome to our App</h1>} />  
-      <Route path="*" element={<ErrorPage/>} />
-      <Route path="/Form" element={<StudentForm/>} />
-    </Routes>
-    <Check name="CGU" age="44"/>
-    
-    </BrowserRouter>
-    // <>    
-    //   {/* <Checks /> */}
+    <>
+    <h1> Users Data </h1>
+    {users.map(user => (
+      <div>
+          <p key={user.id}>Name: {user.name}</p>
+          <p key={user.id}>Email: {user.email}</p>
+          <p key={user.id}>Phone: {user.phone}</p>
+          <p key={user.id}>Website: {user.website}</p>
+      </div>
+      ))}
+    </>
+// return(
+// <>
+//     <BrowserRouter>
+//     <nav>
+//       {/* <Link to="/">Home</Link> |
+//       <Link to="/about">About</Link> |
+//       <Link to="/contact">Contact</Link> |
+//       <Link to="/login">Login</Link>  |
+//       <Link to="/register">Register</Link>  |
+//       <Link to="/reviews">Reviews</Link>  |
+//       <Link to="/services">Services</Link>   */}
+//       <NavLink to="/">Home</NavLink> | 
+//       <NavLink to="/about" style={ ( {isActive} ) => ({
+//         color : isActive ? "green" : "blue"
+//       })}>About</NavLink> | 
+//       <NavLink to="/contact" style={ ( {isActive} ) => ({
+//         color : isActive ? "yellow" : "blue"
+//       })}>Contact</NavLink> |
+//       <NavLink to="/login" style={ ( {isActive} ) => ({
+//         color : isActive ? "red" : "blue"
+//       })}>Login</NavLink> | 
+//       <NavLink to="/register" style={ ( {isActive} ) => ({
+//         color : isActive ? "hotpink" : "blue"
+//       })}>Register</NavLink> | 
+//       <NavLink to="/reviews" style={ ( {isActive} ) => ({
+//         color : isActive ? "skyblue" : "blue"
+//       })}>Reviews</NavLink> | 
+//       <NavLink to="/services" style={ ( {isActive} ) => ({
+//         color : isActive ? "orange" : "blue"
+//       })}>Services</NavLink> 
+//       <NavLink to="/Form" style={ ( {isActive} ) => ({
+//         color : isActive ? "purple" : "blue" 
+//       })}>Student Form</NavLink>
+//       <navLink to="/fetchdata" style={ ( {isActive} ) => ({
+//         color : isActive ? "cyan" : "blue"
+//       })}>Fetch Data</navLink>
+//     </nav>  
+//     <Routes>
+//       <Route path="/" element={<Home/>}/>
+//       <Route path="/about" element={<About/>}/>
+//       <Route path="/contact" element={<h1>Contact Page</h1>} />
+//       <Route path="/login" element={<LoginPage/>} />
+//       <Route path="/register" element={<Register/>} />
+//       <Route path="/reviews" element={<Reviews name="CGU"/>} />
+//       <Route path="/services" element={<h1>Services Page</h1>} />
+//       <Route path="/successLogin" element={<h1>Login Successful, welcome to our App</h1>} />  
+//       <Route path="*" element={<ErrorPage/>} />
+//       <Route path="/Form" element={<StudentForm/>} />
+//       <Route path="/fetchdata" element={<FetchData/>} />
+//     </Routes>
+//     <Check name="CGU" age="44"/>
+
+      
+//     </BrowserRouter>
+       
+//       {/* <Checks /> */}
     // </>
   )
 }

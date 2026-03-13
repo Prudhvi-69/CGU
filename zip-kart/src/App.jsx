@@ -12,6 +12,7 @@ import { NavLink } from 'react-router-dom'
 import { ErrorPage } from './components/ErrorPage'
 import Register from './components/Register'
 import Login from './components/Login'
+import StudentForm from './pages/StudentForm'
 function App() {
   return (
   <BrowserRouter>
@@ -37,6 +38,9 @@ function App() {
       <NavLink to="/register"style={({isActive}) => ({
         color: isActive ? "teal" : "hotpink"
       })}>Register</NavLink> 
+      <NavLink to="/studentform" style={({isActive}) => ({
+        color: isActive ? "purple" : "hotpink"
+      })}>Student Form</NavLink>
     </nav>
     {/* <nav>
       <Link to="/">Home</Link>  |  
@@ -56,6 +60,7 @@ function App() {
       <Route path="*" element={<ErrorPage/>}/>
       <Route path="/register" element={<Register name="CGU"/>}/>
       <Route path="/success" element={<h1>Login Successful</h1>}/>
+      <Route path="/studentform" element={<StudentForm/>}/>
     </Routes>
         {/* <Counts name="Hundia"/> */}
   </BrowserRouter>
