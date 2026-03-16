@@ -1,0 +1,100 @@
+1. SELECT id, name, status FROM users WHERE status = 'active'"
+
+2. findById(users) 
+
+
+
+3. select * from users;
+
+4. findAll(users)
+
+
+
+5. create table Students(name varchar(20), id int, age int);
+
+6. save(Students)
+
+
+
+
+
+
+
+
+
+
+
+
+
+mvn : command used for running maven projects
+			** We need to install and setup maven system variable in our 						local system.
+			** This maven mvn command will work only if you install this and setup and it can be used in the entire system structure.
+
+Ex: mvn spring-boot:run
+
+mvnw : it is known as maven command wrapped inside the spring-boot application called as : maven wrapper and used as 
+
+Ex: ./mvnw spring-boot:run
+
+
+1. SELECT id, name, status FROM users WHERE status = 'active'
+
+2. findById(users)
+
+3. select * from users;
+
+4. findAll(users) 
+
+5. create table users(name varchar(20), id int, age number);
+
+6. save(users) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mvn : it is a command of maven which is used to run spring-boot application. 
+** Inorder to use this we need to install the maven from internet manually.
+** After installation we have to setup the system variable and its path.
+** Then we can use mvn command anywhere in the system.
+Ex : mvn spring-boot:run
+
+mvnw : It is a command provided by spring boot wherer it is going to be used only at the project level but not at system level.
+** to use this one we dont need any extra installations or downloads.
+** Ex: ./mvnw spring-boot:run 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
