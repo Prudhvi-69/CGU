@@ -1,5 +1,6 @@
 package com.jfs.tomato.entity; //creating a module called entity 
 import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
 @Entity   //assigns below class name as the table name in the connected DB
 @Table(name = "BadStudents")
 public class Student{
@@ -26,16 +27,16 @@ public class Student{
     public void setID(int ID){ this.ID = ID;}
     public void setName(String name) { this.name = name; }
     public void setEmail(String email) { this.email = email; }
-    public void setAdd(String address) { this.address=address;}
+    public void setAddress(String address) { this.address=address;}
     public void setAge(int age){ this.age=age;}
-    public void setDance(float attenDance){this.attenDANCE=attenDance;}
+    public void setAttenDance(float attenDance){this.attenDANCE=attenDance;}
    //Getter functions  
     public int getID() { return ID; }
     public String getName(){ return name; }
     public String getEmail(){ return email; } 
-    public String getAdd(){ return address;}
+    public String getAddress(){ return address;}
     public int getAge(){ return age;}
-    public float getDance(){ return attenDANCE;}
+    public float getAttenDance(){ return attenDANCE;}
 
     /*
     pom.xml -> adding this dependency to make a connection to mySQL workbench
