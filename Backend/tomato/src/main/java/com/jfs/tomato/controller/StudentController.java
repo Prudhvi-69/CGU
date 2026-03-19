@@ -24,4 +24,9 @@ public class StudentController {
     public List<Student> showStudent(){
         return studentService.getAllStudents();
     }
+    @GetMapping("/show/{ID}")
+    public Student showOneStudent(@PathVariable int ID  )
+    {
+        return studentService.getOneStudent(ID).orElse(null);
+    }   
 }

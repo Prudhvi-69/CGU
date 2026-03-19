@@ -1,7 +1,7 @@
 package com.jfs.tomato.entity; //creating a module called entity 
 import jakarta.persistence.*;
 @Entity   //assigns below class name as the table name in the connected DB
-@Table(name = "Students_Data")
+@Table(name = "BadStudents")
 public class Student{
 //Each variable will become a column in the table of the connected Database
     @Id

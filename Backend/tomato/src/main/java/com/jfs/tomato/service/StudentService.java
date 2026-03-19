@@ -1,8 +1,11 @@
 package com.jfs.tomato.service;
 import com.jfs.tomato.entity.Student;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
+
 import com.jfs.tomato.repository.StudentRep;
 import java.util.List;
+import java.util.Optional;
 @Service    
 public class StudentService {
     private final StudentRep studentRep;
@@ -14,6 +17,9 @@ public class StudentService {
     }
     public List<Student> getAllStudents(){
         return studentRep.findAll();
+    }
+    public Optional<Student> getOneStudent(@PathVariable int ID){
+        return studentRep.findById(ID);
     }
 /*
 C : to create we use save() method of JpaRepository
