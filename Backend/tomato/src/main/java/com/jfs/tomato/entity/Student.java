@@ -4,17 +4,18 @@ import jakarta.persistence.*;
 @Table(name = "Students_Data")
 public class Student{
 //Each variable will become a column in the table of the connected Database
-    @Id  // assign the variable declared below this as Primary key of table
-    int ID;  //this ID variable becomes primary key 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    int ID;
     String name;  // becomes a column of char type
     String email; // becomes a column of char type 
     String address;
     int age;
     float attenDANCE;
    //Setter functions to setup the values in the variables 
-   Student(){ // default constructor
+    public Student(){ // default constructor
     }
-    Student(int ID, String name, String email, String address, int age, float attenDANCE){ // parameterized constructor to initialize the variables
+    public Student(int ID, String name, String email, String address, int age, float attenDANCE){ // parameterized constructor to initialize the variables
         this.ID = ID;
         this.name = name;
         this.email = email;
